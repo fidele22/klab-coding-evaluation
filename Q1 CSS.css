@@ -1,0 +1,237 @@
+*{
+    margin: 0%;
+
+}
+body{
+    
+        height: 100%;
+        overflow-y: hidden;
+        
+     }
+
+
+.ground {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .part1{
+    grid-column: 1 /2;
+    grid-row: 1;
+    background-color: rgb(0, 119, 255);
+    float: left;
+    height: 700px;
+   
+  }
+  .part2{
+    grid-column: 2/ 3;
+    grid-row: 1;
+    background-color: rgb(211, 211, 218);
+    float: right;
+    height: 700px;
+ 
+  }
+  
+  .part3 {
+    grid-column: 1;
+    grid-row: 3;
+    background-color: rgb(240, 247, 247);
+   margin-left: 10%; 
+   height: 550px;
+   margin-top: -110%;  
+   margin-bottom: 30%;
+   border-radius: 30px 0px 0px 30px; 
+
+
+  }
+  .part4 {
+    grid-column: 2;
+    grid-row: 3;
+    background-color:white;
+    margin-right: 10%;
+   height: 550px;
+   margin-top: -110%;  
+   margin-bottom: 30%;
+   border-radius: 0px 30px 30px 0px; 
+
+
+  }
+  form{
+    background-color: rgb(244, 248, 248);;
+    margin: 5% 20% 5% 20%;
+    border-radius: 10px;
+    
+  }
+  input[type=text]{
+    width: 50%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    margin-left: 6%;
+    resize: vertical 
+  }
+  input[type=password]{
+    width: 50%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    margin-left: 6%;
+    resize: vertical 
+  }
+  label{
+    margin-left: 6%;
+  }
+  h1{
+    text-align: center;
+    margin-bottom: 4%;
+  }
+  p{
+    text-align: center;
+    margin-bottom: 6%;
+  }
+  .button{
+    text-align: center;
+margin-bottom: 6%;
+
+
+  }
+  .button button{
+    background-color: rgb(35, 58, 161);
+    width: 80%; 
+    padding: 12px; 
+    border-radius: 10px; 
+    font-size: larger;
+    margin-top: 4%;
+    border: none;
+  }
+  .image{
+    text-align: center;
+  }
+  input[type=checkbox]{
+    margin-left: 6%;
+  }
+  .dot {
+    height: 350px;
+    width: 350px;
+    background-color: rgb(0, 119, 255);
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+  }
+  .cirlce{
+    text-align: center;
+    margin-top: 20%;
+  }
+  .statistic{
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 10px 0px 40px;
+    margin-top: -48%;
+   position: relative;
+    text-align: left;
+    height: 15em;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 10px; 
+
+  }
+  .part3 p{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .s1{
+background-color:white;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+margin-left: 55%;
+height: 30%;
+margin-right: 5%;
+border-radius: 10px;
+margin-top: -12em;
+  }
+  .s2{
+background-color:white;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+margin-left: 55%;
+height: 30%;
+margin-right: 5%;
+margin-top: -2%;
+border-radius: 10px;
+  }
+  .s1 p{
+    text-align: left;
+    margin-left: 3%;
+
+  }
+  .s2 p{
+    text-align: left;
+    margin-left: 3%;
+  }
+  .s2 img{
+    margin-left: 8em;
+    margin-top: -6em;
+  }
+  .s1 img{
+    margin-left: 8em;
+    margin-top: -6em;
+  }
+  .statistic a{
+    margin-left: 80%;
+  }
+  .statistic button{
+margin-top: 3em;
+margin-left: 1em;
+border-radius: 10px;
+border: none;
+  }
+  .statistic h3{
+    margin-left: 2%;
+  }
+  .circular-chart {
+    display: block;
+    max-width: 20%;
+    max-height: 70px;
+    margin-left: 5em;
+    margin-top: 3em;
+  }
+  .that-circle {
+    fill: none;
+    stroke-width: 4;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+    box-shadow: 0 8px 25px 0 #e5e5e5;
+  }
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  
+  .percentage {
+    fill: #4285f4;
+    font-size: 0.375em;
+    text-anchor: middle;
+    font-family: AvenirNext;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+  }
+  .percentage_done {
+    fill: #9b9b9b;
+    font-size: 0.2em;
+    font-family: AvenirNext;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.1px;
+  }
